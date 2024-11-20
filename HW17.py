@@ -1,0 +1,37 @@
+israel_dict = {'name': 'Israel', 'birth': 1948, 'population_millions': 9.3, \
+               'capital': ' Jerusalem', 'language': 'Hebrew',
+               'cities': ['Jerusalem', 'Tel Aviv', 'Haifa', 'Rishon LeZion', \
+                          'Petah Tikva', 'Ashdod'], 'currency': 'ILS', \
+               'area_Kilometer': 22145, 'gdp_billion': 450}
+print('a:')
+print(israel_dict.get('capital', 'not exist'))
+print('b:')
+print(israel_dict.keys())
+print('c:')
+print(israel_dict.values())
+print('d:')
+print(israel_dict.items())
+print('e:')
+israel_dict_new = israel_dict.copy()
+print('f:')
+israel_dict_new.pop('gdp_billion')
+print(israel_dict_new)
+print('g:')
+dict_g: dict[str, int] = (israel_dict.fromkeys(israel_dict.keys()))
+print(dict_g)
+dict_g['name'] = str(input('name:'))
+dict_g['birth'] = str(input('birth:'))
+dict_g['population_millions'] = str(input('population_millions:'))
+dict_g['capital'] = str(input('capital:'))
+dict_g['language'] = str(input('language:'))
+dict_g['cities'] = str(input('cities:'))
+dict_g['currency'] = str(input('currency:'))
+dict_g['area_Kilometer'] = str(input('area_Kilometer:'))
+dict_g['gdp_billion'] = str(input('gdp_billion:'))
+print(dict_g)
+print('2:')
+s: str = input('enter a string:')
+after_split = s.split()
+last_word = after_split[-1]
+len_word = len(after_split[-1])
+print(f'The last word is {last_word} with length {len_word}')
